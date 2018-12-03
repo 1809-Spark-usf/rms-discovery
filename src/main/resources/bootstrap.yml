@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: native, ${RMS_APP_PROFILE:local}
+  application:
+    name: discovery
+    
+---
+spring:
+  profiles: local
+  config:
+    location: http://localhost:8888
